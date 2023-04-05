@@ -1,0 +1,2819 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-09e11531a55b6c294",
+                    "InstanceType": "r4.large",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-06T07:14:28+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-11-71.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.11.71",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-1d6c5679",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-06T07:14:29+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-05a6192abd8adf6cc"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-06T07:14:29+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-03decd6aed5b28639"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-8cb69166-96f9-812a-061a-2ba09fadb682-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJGTZEMAEPH3LNEICK"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-06T07:14:28+00:00",
+                                "AttachmentId": "eni-attach-04dcf9cdd61c46b8a",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                },
+                                {
+                                    "GroupName": "sf360-web-staging-EC2",
+                                    "GroupId": "sg-f0575897"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:84:1e:fc:98:ec",
+                            "NetworkInterfaceId": "eni-0d8502cfef33bff71",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-11-71.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.11.71",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-11-71.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.11.71"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-1d6c5679",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        },
+                        {
+                            "GroupName": "sf360-web-staging-EC2",
+                            "GroupId": "sg-f0575897"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-ts7pbafq",
+                    "Tags": [
+                        {
+                            "Key": "EnvName",
+                            "Value": "sf360"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "sf360-web-staging"
+                        },
+                        {
+                            "Key": "AppArtefact",
+                            "Value": "web-hotfix-10527.tar.gz"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "web"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "153"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "web"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "sf360-web-staging-ASG-black"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-8cb69166-96f9-812a-061a-2ba09fadb682"
+                        },
+                        {
+                            "Key": "asg_color",
+                            "Value": "black"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "staging"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-0898ee18efa8676a3"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "sf360"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-06T07:14:28+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-0a741aa4e85bd55a3"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-00539f516dc94e4e2",
+                    "InstanceType": "t2.medium",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-09T02:38:56+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-10-108.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.10.108",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-c2edeaa6",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-09T02:38:57+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0670128b61051911e"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-09T02:38:57+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-056edbd9e48544aa2"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-049c1946-9673-2100-0c9a-8900a9867ae8-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJI3GZPASAYOZGNT24"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-09T02:38:56+00:00",
+                                "AttachmentId": "eni-attach-011ba7783120a7dae",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "sf360-centralhub-uat-EC2",
+                                    "GroupId": "sg-7a6c781d"
+                                },
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:71:54:6c:4a:5c",
+                            "NetworkInterfaceId": "eni-05c1165682af10d50",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-10-108.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.10.108",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-10-108.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.10.108"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-c2edeaa6",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "sf360-centralhub-uat-EC2",
+                            "GroupId": "sg-7a6c781d"
+                        },
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-42apbg4n",
+                    "Tags": [
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-049c1946-9673-2100-0c9a-8900a9867ae8"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "centralhub"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-085894f3ebfd39af2"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "sf360-centralhub-uat"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "centralhub"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "uat"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "89"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "sf360-centralhub-uat-ASG"
+                        },
+                        {
+                            "Key": "EnvName",
+                            "Value": "sf360"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "sf360"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-09T02:38:56+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-03fc14f71ea06b9ab"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-043d78c4793b275a2",
+                    "InstanceType": "t2.small",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-10T07:29:50+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-91-89.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.91.89",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-bb655ddf",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-10T07:29:51+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0c79104639ed2e3af"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-10T07:29:51+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-085360e2e26a6381a"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-06bc39c6-1cf3-29a0-a432-a988f470d967-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJHXQRTG5MCS2JV4AW"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-10T07:29:50+00:00",
+                                "AttachmentId": "eni-attach-0879fbbf01c21e35c",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "bgl360-supportme-staging-EC2",
+                                    "GroupId": "sg-37322350"
+                                },
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:2a:77:28:a1:78",
+                            "NetworkInterfaceId": "eni-0b16d49213f9d38e2",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-91-89.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.91.89",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-91-89.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.91.89"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-bb655ddf",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "bgl360-supportme-staging-EC2",
+                            "GroupId": "sg-37322350"
+                        },
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-rk2p8zhp",
+                    "Tags": [
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-06bc39c6-1cf3-29a0-a432-a988f470d967"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "bgl360"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "bgl360-supportme-staging-ASG"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-0a0097c5dff04d488"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "supportme"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "supportme"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "97"
+                        },
+                        {
+                            "Key": "EnvName",
+                            "Value": "bgl360"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "staging"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "bgl360-supportme-staging"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-10T07:29:50+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-020235b2c8249a6ce"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-0e3026e586b5c280a",
+                    "InstanceType": "r5a.xlarge",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-11T11:22:00+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-240-124.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.240.124",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-af664ccb",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-11T11:22:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0db39aa8a921cc3a1"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-11T11:22:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0ed7bed6a364ceb31"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvde",
+                            "Ebs": {
+                                "AttachTime": "2022-04-11T11:25:39+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-02ff1cb8522207bd9"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-8c3eb364-9471-81a2-041a-03200a1c0d61-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJ2MMNO2WTE7JEUCMQ"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-11T11:22:00+00:00",
+                                "AttachmentId": "eni-attach-09ce4aad84f7d27a2",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "tools-casci-uat-EC2",
+                                    "GroupId": "sg-baf110dc"
+                                },
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:64:fa:70:fe:98",
+                            "NetworkInterfaceId": "eni-0edb7cc3adc2e4a2c",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-240-124.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.240.124",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-240-124.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.240.124"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-af664ccb",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "tools-casci-uat-EC2",
+                            "GroupId": "sg-baf110dc"
+                        },
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "EnvName",
+                            "Value": "tools"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-8c3eb364-9471-81a2-041a-03200a1c0d61"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "27"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "cas360"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-00b4cba442f213233"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "tools-casci-uat"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "tools-casci-uat-ASG"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "uat"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "casci"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "casci"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-11T11:22:00+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-0e3f19e32aba50622"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-02d7057a3b583922f",
+                    "InstanceType": "t2.small",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-11T11:19:12+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-240-102.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.240.102",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-af664ccb",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-11T11:19:13+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b02f5bd933aaa6c2"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-11T11:19:13+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0687d3b4de47d9244"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-84be9144-1cf9-2182-2690-0902d585e7fc-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAI3XBCB5BI2BGGITPQ"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-11T11:19:12+00:00",
+                                "AttachmentId": "eni-attach-082ae6ca477c579a4",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                },
+                                {
+                                    "GroupName": "tools-dbproxy-uat-EC2",
+                                    "GroupId": "sg-1a19fb7c"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:1d:b0:4b:73:a4",
+                            "NetworkInterfaceId": "eni-034b87dca698cfaec",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-240-102.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.240.102",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-240-102.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.240.102"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-af664ccb",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        },
+                        {
+                            "GroupName": "tools-dbproxy-uat-EC2",
+                            "GroupId": "sg-1a19fb7c"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "cost_center",
+                            "Value": "shared"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "dbproxy"
+                        },
+                        {
+                            "Key": "EnvName",
+                            "Value": "tools"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-84be9144-1cf9-2182-2690-0902d585e7fc"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "dbproxy"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-07061a0bf25081f6f"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "tools-dbproxy-uat-ASG"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "26"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "tools-dbproxy-uat"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "uat"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-11T11:19:12+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-06f476d22ca6b5eee"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-046f260946b212d6f",
+                    "InstanceType": "m5.2xlarge",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-12T23:23:22+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-240-85.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.240.85",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-af664ccb",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-12T23:23:23+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0207fe93162b50ca4"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-12T23:23:23+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-04988654cf27ef14a"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvde",
+                            "Ebs": {
+                                "AttachTime": "2022-04-12T23:26:29+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0c7170626b1f02d17"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-263eb966-1efb-2320-2c90-810a580917c2-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIR3RGKUZYIX3BJN5M"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-12T23:23:22+00:00",
+                                "AttachmentId": "eni-attach-08c4799ffabd3f563",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "tools-jenkins-uat-EC2",
+                                    "GroupId": "sg-ca5f41ad"
+                                },
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:e4:30:4c:2d:e8",
+                            "NetworkInterfaceId": "eni-00622d839ca13959a",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-240-85.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.240.85",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-240-85.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.240.85"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-af664ccb",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "tools-jenkins-uat-EC2",
+                            "GroupId": "sg-ca5f41ad"
+                        },
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-0a5cdce3eadab6d57"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "jenkins"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "uat"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "tools-jenkins-uat-ASG"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "29"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "tools-jenkins-uat"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "jenkins"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "shared"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-263eb966-1efb-2320-2c90-810a580917c2"
+                        },
+                        {
+                            "Key": "EnvName",
+                            "Value": "tools"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 4,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-12T23:23:22+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-09083ff62bf45509d"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-0d3624f6060dade61",
+                    "InstanceType": "c5.large",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-04-18T23:57:48+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-11-87-15.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.11.87.15",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0132564fdsgff",
+                    "VpcId": "vpc-013248967843254",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-04-18T23:57:49+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0973a180c7bafc2b6"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-069619ee-3ef9-8120-0e92-2982775242c8-0",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPA2ZK3ORXWMIRT6KPI3"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-18T23:57:48+00:00",
+                                "AttachmentId": "eni-attach-03efa6d5c1973d148",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:7d:e9:eb:a1:c2",
+                            "NetworkInterfaceId": "eni-001fe7b5e0097913c",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-87-15.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.87.15",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-87-15.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.87.15"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-203.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.203"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-142.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.142"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-81-141.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.81.141"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-87-140.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.87.140"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-18.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.18"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-241.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.241"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-16.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.16"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-164.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.164"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-87-116.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.87.116"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-18T23:59:05+00:00",
+                                "AttachmentId": "eni-attach-054f5df655e147944",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 1,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0d3624f6060dade61",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:d7:21:e7:ed:92",
+                            "NetworkInterfaceId": "eni-071d1781e25b128d5",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-82-50.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.82.50",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-82-50.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.50"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-11.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.11"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-233.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.233"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-184.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.184"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-108.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.108"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-93-92.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.93.92"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-81-162.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.81.162"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-144.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.144"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-199.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.199"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-164.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.164"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "uat-eks-cluster20220418230913998600000003",
+                            "GroupId": "sg-0143242c7f1d71448"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-97ge89in",
+                    "Tags": [
+                        {
+                            "Key": "kubernetes.io/cluster/uat-eks-cluster",
+                            "Value": "owned"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "uat-eks-cluster-inference2022041823194119050000001b"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-069619ee-3ef9-8120-0e92-2982775242c8"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "devops"
+                        },
+                        {
+                            "Key": "Namespace",
+                            "Value": "bgl360"
+                        },
+                        {
+                            "Key": "App",
+                            "Value": "eks-q"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/enabled",
+                            "Value": "true"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "uat"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "uat-eks-cluster-inference-eks_asg"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/uat-eks-cluster",
+                            "Value": "true"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-0047e5b92d95bae9a"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-18T23:57:48+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-0102b825fc4d7a309"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-0bc346b626b04c675",
+                    "InstanceType": "r4.2xlarge",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-04-18T23:58:23+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-11-94-82.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.11.94.82",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0132564fdsgff",
+                    "VpcId": "vpc-013248967843254",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-04-18T23:58:29+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0be43c4d0524da5bc"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-26b693e4-1cf1-8ba8-0618-01a27bf3a63a-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPA2ZK3ORXWNAOVXKQ2G"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-18T23:58:23+00:00",
+                                "AttachmentId": "eni-attach-0114061a288b32730",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:0b:99:dd:d3:74",
+                            "NetworkInterfaceId": "eni-025f2be8da7feecfb",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-94-82.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.94.82",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-94-82.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.82"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-207.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.207"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-129.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.129"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-97.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.97"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-92-198.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.92.198"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-186.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.186"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-122.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.122"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-83-88.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.88"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-95.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.95"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-220.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.220"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-115.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.115"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-242.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.242"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-80.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.80"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-240.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.240"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-83-244.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.244"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-19T00:00:18+00:00",
+                                "AttachmentId": "eni-attach-0e8ae76ddbf1ae22d",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 1,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0bc346b626b04c675",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:17:1c:51:f6:84",
+                            "NetworkInterfaceId": "eni-049b16af62a902c35",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-91-253.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.91.253",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-91-253.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.253"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-207.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.207"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-237.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.237"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-45.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.45"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-141.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.141"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-76.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.76"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-87-231.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.87.231"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-165.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.165"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-127.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.127"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-87-30.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.87.30"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-92-222.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.92.222"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-241.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.241"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-16.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.16"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-81-85.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.81.85"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-83-117.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.117"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-19T21:02:43+00:00",
+                                "AttachmentId": "eni-attach-069685310fa5a7f69",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 2,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0bc346b626b04c675",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:40:eb:cc:9c:4c",
+                            "NetworkInterfaceId": "eni-0f7bcdc6538c957ee",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-87-158.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.87.158",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-87-158.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.87.158"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-170.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.170"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-207.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.207"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-12.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.12"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-162.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.162"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-33.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.33"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-92-0.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.92.0"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-103.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.103"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-7.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.7"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-83-133.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.133"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-58.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.58"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-127.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.127"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-81-159.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.81.159"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-215.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.215"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-92-213.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.92.213"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-20T01:01:36+00:00",
+                                "AttachmentId": "eni-attach-0724dc44ab7532e37",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 3,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0bc346b626b04c675",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:9a:df:8d:af:a0",
+                            "NetworkInterfaceId": "eni-0cabbba13a070bb70",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-94-166.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.94.166",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-94-166.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.166"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-93-10.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.93.10"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-141.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.141"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-135.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.135"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-219.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.219"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-186.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.186"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-121.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.121"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-85-153.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.85.153"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-57.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.57"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-93.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.93"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-81.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.81"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-55.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.55"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-182.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.182"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-117.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.117"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-81-53.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.81.53"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "uat-eks-cluster20220418230913998600000003",
+                            "GroupId": "sg-0143242c7f1d71448"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-iygp8j7n",
+                    "Tags": [
+                        {
+                            "Key": "Namespace",
+                            "Value": "bgl360"
+                        },
+                        {
+                            "Key": "App",
+                            "Value": "eks-q"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "uat"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-26b693e4-1cf1-8ba8-0618-01a27bf3a63a"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "devops"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-0e3a66b2434530144"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/enabled",
+                            "Value": "true"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/uat-eks-cluster",
+                            "Value": "true"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "uat-eks-cluster-spot-eks_asg"
+                        },
+                        {
+                            "Key": "kubernetes.io/cluster/uat-eks-cluster",
+                            "Value": "owned"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "uat-eks-cluster-spot2022041823194120310000001e"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 4,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-18T23:58:23+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-0df8ee9923253ac54"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-0f1639938acd74629",
+                    "InstanceType": "r4.2xlarge",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-04-18T23:52:29+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-11-88-221.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.11.88.221",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0132564fdsgff",
+                    "VpcId": "vpc-013248967843254",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-04-18T23:52:30+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-074a1d6e4bc14de85"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdbv",
+                            "Ebs": {
+                                "AttachTime": "2022-04-21T15:06:17+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0e9ac0f953908ae36"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdbc",
+                            "Ebs": {
+                                "AttachTime": "2022-04-21T15:06:17+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-01172ada49da78e95"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-2e1e9144-167b-8b22-84b2-0b2a5d6278e3-0",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPA2ZK3ORXWDLEAZP5VU"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-18T23:52:29+00:00",
+                                "AttachmentId": "eni-attach-05367b55920765182",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:ff:92:8a:f5:60",
+                            "NetworkInterfaceId": "eni-004498dabb88a6110",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-88-221.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.88.221",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-88-221.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.221"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-170.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.170"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-93-168.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.93.168"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-239.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.239"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-140.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.140"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-3.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.3"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-93-2.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.93.2"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-6.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.6"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-219.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.219"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-152.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.152"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-254.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.254"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-179.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.179"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-92-241.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.92.241"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-85-215.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.85.215"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-87.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.87"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-18T23:54:18+00:00",
+                                "AttachmentId": "eni-attach-085a8e50437240ae3",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 1,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0f1639938acd74629",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:42:48:87:5a:b0",
+                            "NetworkInterfaceId": "eni-0a453a91c8067254c",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-83-151.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.83.151",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-83-151.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.151"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-93-78.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.93.78"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-83-174.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.174"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-35.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.35"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-134.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.134"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-100.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.100"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-251.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.251"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-187.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.187"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-154.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.154"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-191.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.191"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-95.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.95"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-30.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.30"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-82.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.82"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-49.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.49"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-119.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.119"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-18T23:57:32+00:00",
+                                "AttachmentId": "eni-attach-0ae7256e65f3f1c65",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 2,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0f1639938acd74629",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:2e:03:01:cd:3a",
+                            "NetworkInterfaceId": "eni-08b53b780817d755c",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-88-139.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.88.139",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-88-139.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.139"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-10.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.10"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-143.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.143"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-86-237.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.86.237"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-109.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.109"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-108.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.108"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-95-162.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.95.162"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-85-231.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.85.231"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-191.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.191"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-94.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.94"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-50.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.50"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-144.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.144"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-80.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.80"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-82-212.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.82.212"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-91-212.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.91.212"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-26T21:03:46+00:00",
+                                "AttachmentId": "eni-attach-05d5ac2de5a237197",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 3,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-0f1639938acd74629",
+                            "Groups": [
+                                {
+                                    "GroupName": "uat-eks-cluster20220418230913998600000003",
+                                    "GroupId": "sg-0143242c7f1d71448"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:49:a7:e4:63:3e",
+                            "NetworkInterfaceId": "eni-0772b08f40a3c235c",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-11-92-25.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.11.92.25",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-11-92-25.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.92.25"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-90-10.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.90.10"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-85-105.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.85.105"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-83-200.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.83.200"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-81-175.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.81.175"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-0.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.0"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-80-216.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.80.216"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-85-190.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.85.190"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-190.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.190"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-84-125.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.84.125"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-221.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.221"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-94-83.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.94.83"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-93-17.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.93.17"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-88-151.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.88.151"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-11-89-54.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.11.89.54"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0132564fdsgff",
+                            "VpcId": "vpc-013248967843254",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "uat-eks-cluster20220418230913998600000003",
+                            "GroupId": "sg-0143242c7f1d71448"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-j3r686gn",
+                    "Tags": [
+                        {
+                            "Key": "App",
+                            "Value": "eks-q"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "uat-eks-cluster-on-demand2022041823194119250000001d"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "uat-eks-cluster-on-demand-eks_asg"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/uat-eks-cluster",
+                            "Value": "true"
+                        },
+                        {
+                            "Key": "kubernetes.io/cluster/uat-eks-cluster",
+                            "Value": "owned"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-2e1e9144-167b-8b22-84b2-0b2a5d6278e3"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "devops"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "uat"
+                        },
+                        {
+                            "Key": "Namespace",
+                            "Value": "bgl360"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-0ba4dead3f4d471ea"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/enabled",
+                            "Value": "true"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 4,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-18T23:52:29+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-0ef6c976e73447dc5"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "InstanceId": "i-0df9fe0a5c4645d5c",
+                    "InstanceType": "t2.medium",
+                    "KeyName": "MyKeyPair2",
+                    "LaunchTime": "2022-04-23T15:02:15+00:00",
+                    "Monitoring": {
+                        "State": "enabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-southeast-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-80-240-106.ap-southeast-2.compute.internal",
+                    "PrivateIpAddress": "10.80.240.106",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-af664ccb",
+                    "VpcId": "vpc-31256d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-04-23T15:02:16+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0d1e613bfe1af9355"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdb",
+                            "Ebs": {
+                                "AttachTime": "2022-04-23T15:02:16+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-03358435b7319a00b"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdf",
+                            "Ebs": {
+                                "AttachTime": "2022-04-23T15:03:15+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0d4a4fcc5099f2f73"
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-0434b16e-1671-8302-0c38-0b2a13abe6f8-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIFNBX4M76U3DBKQRG"
+                    },
+                    "InstanceLifecycle": "spot",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2022-04-23T15:02:15+00:00",
+                                "AttachmentId": "eni-attach-03fb68c3ae524b699",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "tools-nexus-uat-EC2",
+                                    "GroupId": "sg-0af20a62cf25823fd"
+                                },
+                                {
+                                    "GroupName": "bglcorp-Global-SSH",
+                                    "GroupId": "sg-f7e0cf90"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:46:e5:94:9c:5a",
+                            "NetworkInterfaceId": "eni-0d092b93ff3b31c4f",
+                            "OwnerId": "1234567890",
+                            "PrivateDnsName": "ip-10-80-240-106.ap-southeast-2.compute.internal",
+                            "PrivateIpAddress": "10.80.240.106",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-80-240-106.ap-southeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.80.240.106"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-af664ccb",
+                            "VpcId": "vpc-31256d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "tools-nexus-uat-EC2",
+                            "GroupId": "sg-0af20a62cf25823fd"
+                        },
+                        {
+                            "GroupName": "bglcorp-Global-SSH",
+                            "GroupId": "sg-f7e0cf90"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "SpotInstanceRequestId": "sir-stspbe5p",
+                    "Tags": [
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "tools-nexus-uat-ASG"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-02e269df28411913c"
+                        },
+                        {
+                            "Key": "EnvTier",
+                            "Value": "nexus"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-0434b16e-1671-8302-0c38-0b2a13abe6f8"
+                        },
+                        {
+                            "Key": "cost_center",
+                            "Value": "shared"
+                        },
+                        {
+                            "Key": "Role",
+                            "Value": "nexus"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "tools-nexus-uat"
+                        },
+                        {
+                            "Key": "EnvName",
+                            "Value": "tools"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "26"
+                        },
+                        {
+                            "Key": "EnvType",
+                            "Value": "uat"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-04-23T15:02:15+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    }
+                }
+            ],
+            "OwnerId": "1234567890",
+            "RequesterId": "458534499037",
+            "ReservationId": "r-0aa4a26c8da66182d"
+        }
+    ]
+}

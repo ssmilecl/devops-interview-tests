@@ -16,7 +16,47 @@ The result is :
 Exercise 2
 I create an IAM user in the AWS console first and create the credentials for this user to connect with Terraform.
 
-This Terraform module defines the three groups, group1, group2, and group3, using the aws_iam_group resource. It then defines the two users, jerome and marc, using the aws_iam_user resource. Finally, it creates the necessary group associations using the aws_iam_group_membership resource.
+##This Terraform module defines the three groups, group1, group2, and group3, using the aws_iam_group resource. It then defines the two users, jerome and marc, using the aws_iam_user resource. Finally, it creates the necessary group associations using the aws_iam_group_membership resource.##
+
+I modify this answer by using the local variable which is provided. 
+Use the count parameter is set to the length of the users local variable. The name parameter is set to the groups array of the user object at the current index, in order to creates IAM groups.
+And the to reates IAM users. The count parameter is set to the length of the users local variable. The name parameter is set to the username of the user object at the current index.
+Last but not least, I need to create associates IAM users with their groups. The count parameter is set to the length of the users local variable. The user parameter is set to the name of the user at the current index. The groups parameter is set to a list containing the name of the group at the current index.
+
+However, I noticed that when I run terraform plan and terraform apply, the group2 is not created. So I add two output line in the file
+output "group_names" {
+  value = aws_iam_group.groups[*].name
+}
+output "user_info" {
+  value = { for user in keys(local.users) : user => {
+    groups = aws_iam_user_group_membership.group_membership[*].groups[count.index] if lookup(local.users[user], "groups", []) != []
+  } }
+}
+
+But the result is confused 
+The output is 
+group_names = [
+    "group1",
+    "group3",
+    ]
+
+user_info = {
+    user1 = {
+    groups = [
+        "group1",
+        "group2",
+        ]
+    }
+user2 = {
+    groups = [
+        "group2",
+        "group3",
+        ]
+     }
+    } 
+
+Sorry, based on my current knowledge of Terraform, I couldn't fix this bug eventually.
+
 
 Exercise3 Dockerfile
 I use alpine:latest as a base, then run a command to create the index.html file, in order to print the "Hello World"

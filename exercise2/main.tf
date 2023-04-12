@@ -2,50 +2,37 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-resource "aws_iam_group" "group1" {
-  name = "group1"
+locals {
+  users = {
+    "user1" = {
+      username = "jerome"
+      groups   = ["group1", "group2"]
+    },
+    "user2" = {
+      username = "marc"
+      groups   = ["group2", "group3"]
+    }
+  }
 }
 
-resource "aws_iam_group" "group2" {
-  name = "group2"
+# Create IAM groups
+
+resource "aws_iam_group" "groups" {
+  count = length(keys(local.users))
+  name = local.users[keys(local.users)[count.index]]["groups"][count.index]
 }
 
-resource "aws_iam_group" "group3"{
-  name = "group3"
+# Create IAM users 
+
+resource "aws_iam_user" "users" {
+  count = length(keys(local.users))
+  name = local.users[keys(local.users)[count.index]]["username"]
 }
 
-resource "aws_iam_user" "jerome" {
-  name = "jerome"
-}
+# Associate IAM users with their groups
 
-resource "aws_iam_user" "marc"{
-  name = "marc"
-}
-
-resource "aws_iam_group_membership" "jerome" {
-  name = "${aws_iam_group.group1.name}-membership"
-  users = [aws_iam_user.jerome.name]
-
-  group = aws_iam_group.group1.name
-}
-
-resource "aws_iam_group_membership" "marc" {
-  name = "${aws_iam_group.group2.name}-membership"
-  users = [aws_iam_user.marc.name]
-
-  group = aws_iam_group.group2.name
-}
-
-resource "aws_iam_group_membership" "jerome_group2" {
-  name = "${aws_iam_group.group2.name}-membership"
-  users = [aws_iam_user.jerome.name]
-
-  group = aws_iam_group.group2.name
-}
-
-resource "aws_iam_group_membership" "marc_group3" {
-  name = "${aws_iam_group.group3.name}-membership"
-  users = [aws_iam_user.marc.name]
-
-  group = aws_iam_group.group3.name
+resource "aws_iam_user_group_membership" "group_membership" {
+  count = length(keys(local.users))
+  user = aws_iam_user.users[count.index].name
+  groups = [aws_iam_group.groups[count.index].name]
 }

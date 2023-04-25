@@ -18,7 +18,7 @@ I create an IAM user in the AWS console first and create the credentials for thi
 
 ##This Terraform module defines the three groups, group1, group2, and group3, using the aws_iam_group resource. It then defines the two users, jerome and marc, using the aws_iam_user resource. Finally, it creates the necessary group associations using the aws_iam_group_membership resource.##
 
-I modify this answer by using the local variable which is provided. 
+/***I modify this answer by using the local variable which is provided. 
 Use the count parameter is set to the length of the users local variable. The name parameter is set to the groups array of the user object at the current index, in order to creates IAM groups.
 And the to reates IAM users. The count parameter is set to the length of the users local variable. The name parameter is set to the username of the user object at the current index.
 Last but not least, I need to create associates IAM users with their groups. The count parameter is set to the length of the users local variable. The user parameter is set to the name of the user at the current index. The groups parameter is set to a list containing the name of the group at the current index.
@@ -55,8 +55,13 @@ user2 = {
      }
     } 
 
-Sorry, based on my current knowledge of Terraform, I couldn't fix this bug eventually.
+Sorry, based on my current knowledge of Terraform, I couldn't fix this bug eventually.***/
 
+I use the for_each argument creates multiple instances of the aws_iam_group resource by iterating over the flattened unique set of all the groups from the local.users variable. The name argument is set to the group name which is each key from the for_each set.
+
+Similarly, using for_each argument creates multiple instances of the aws_iam_user resource by iterating over the local.users variable. The name argument is set to the username which is each value from the for_each map.
+
+Last but not least, the final block creates the association between IAM users and their respective groups using the aws_iam_user_group_membership resource type. The for_each argument creates multiple instances of the aws_iam_user_group_membership resource by iterating over the local.users map. The user argument is set to the username of each user from the local.users map. The groups argument is set to the list of groups of each user from the local.users map. The depends_on argument specifies that this resource depends on the aws_iam_user and aws_iam_group resources to ensure they are created before creating the group memberships.
 
 Exercise3 Dockerfile
 I use alpine:latest as a base, then run a command to create the index.html file, in order to print the "Hello World"
